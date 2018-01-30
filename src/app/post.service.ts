@@ -6,6 +6,8 @@ import { Response } from '@angular/http';
 @Injectable()
 export class PostService {
 
+    private productsServiceURI: string = 'http://localhost:4000';
+
    constructor(private http: HttpClient) {}
 
    private postsUrl = "http://jsonplaceholder.typicode.com/posts"
